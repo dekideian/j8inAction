@@ -1,1 +1,12 @@
-This will be my info file :)
+Chapter 2 - Passing code with behaviour parametrization
+
+ex
+we have a list of apples, the user wants to return all the red ones, 
+then all the green ones; then only the small ones, and so forth. 
+let's create code that returns all these respecting the 
+DRY principle - don't repeat yourself 
+
+a predicate - a function that returns a boolean
+let us define an interface to model the selection criteria 
+public interface ApplePredicate{ boolean test(Apple apple)}
+we can declare multiple impl of ApplePredicate to repr diff selection criteria. 
