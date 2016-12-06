@@ -8,5 +8,17 @@ DRY principle - don't repeat yourself
 
 a predicate - a function that returns a boolean
 let us define an interface to model the selection criteria 
-public interface ApplePredicate{ boolean test(Apple apple)}
+public interface ApplePredicate{ 
+	boolean test(Apple apple)
+}
 we can declare multiple impl of ApplePredicate to repr diff selection criteria. 
+Summary:
+1) behaviour parameterization is the ability for a method to take multiple different behaviors as parameters 
+and use them internally to accomplish different behaviors.
+2) Behavior parameterization lets u make your code more adaptive to changing requirements and saves on engineering efforts
+in the future. 
+3) Passing code is a way to give new behaviors as arguments to a method, it's verbose prior
+to java 8. Anonymous classes helped a bit before j8 to get rid of the verbosity associated with declaring multiple 
+concrete classes for an interface that are needed only once. 
+4) the java api contains many methods that can be parameterized with different behaviors, which include
+sorting, threads, and gui Handling. 
