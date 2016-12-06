@@ -1,0 +1,9 @@
+package chapter2.apples;
+ 
+interface ApplePredicate{
+	boolean test(Apple apple);
+}
+
+public class FilteringApples {
+
+}

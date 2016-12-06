@@ -1,0 +1,18 @@
+package test;
+class apple {
+	private int size;
+	private String color;
+	public int getSize() {
+		return size;
+	}
+	public String getColor() {
+		return color;
+	}
+}
+interface ApplePredicate{
+	boolean test(Apple apple);
+}
+
+public class FilteringApples {
+
+}

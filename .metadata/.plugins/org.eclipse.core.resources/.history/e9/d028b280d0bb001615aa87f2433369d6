@@ -1,0 +1,25 @@
+package chapter2.apples;
+
+import chapter2.predicates.ApplePredicate;
+
+class AppleHeavyPredicate implements ApplePredicate{
+
+	@Override
+	public boolean test(Apple apple) {
+		return apple.getSize()>150;
+	}
+	
+}
+class AppleGreenColorPredicate implements ApplePredicate{
+
+	@Override
+	public boolean test(Apple apple) {
+		return apple.getColor().equals("green");
+	}
+	
+}
+public class FilteringApples {
+	public static void main(String[] args){
+		
+	}
+}

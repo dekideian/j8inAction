@@ -1,0 +1,5 @@
+package chapter2.predicates;
+
+public interface ApplePredicate {
+
+}

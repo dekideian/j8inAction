@@ -1,0 +1,12 @@
+package test;
+
+public class Apple {
+	private int size;
+	private String color;
+	public int getSize() {
+		return size;
+	}
+	public String getColor() {
+		return color;
+	}
+}

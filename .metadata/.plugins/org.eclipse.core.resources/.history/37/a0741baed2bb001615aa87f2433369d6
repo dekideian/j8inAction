@@ -1,0 +1,45 @@
+package chapter2.apples;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import chapter2.predicates.ApplePredicate;
+
+class AppleHeavyPredicate implements ApplePredicate{
+
+	@Override
+	public boolean test(Apple apple) {
+		return apple.getSize()>150;
+	}
+	
+}
+class AppleGreenColorPredicate implements ApplePredicate{
+
+	@Override
+	public boolean test(Apple apple) {
+		return apple.getColor().equals("green");
+	}
+	
+}
+public class FilteringApples {
+	public static void main(String[] args){
+		List<Apple> apples = Arrays.asList(new Apple(50, "red"), 
+				new Apple(150, "green"), 
+				new Apple(250, "red"));
+		List<Apple> heavyApples =filterApples(apples, new AppleHeavyPredicate());
+		List<Apple> redApples =filterApples(apples, new AppleGreenColorPredicate());
+		System.out.println(Arrays.toString(heavyApples.toArray()));
+		heavyApples.forEach(System.out::println);
+		redApples.forEach(System.out::println);
+	}
+	
+	public static List<Apple> filterApples(List<Apple> inventory, ApplePredicate p){
+		List<Apple> result = new ArrayList<Apple>();
+		for(Apple currentApple: inventory){
+			if(p.test(currentApple))
+				result.add(currentApple);
+		}
+		return result;
+	}
+}

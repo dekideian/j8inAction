@@ -1,0 +1,7 @@
+package chapter2.predicates;
+
+import chapter2.apples.Apple;
+
+interface ApplePredicate{
+	boolean test(Apple apple);
+}
