@@ -1,9 +1,0 @@
-package test;
- 
-interface ApplePredicate{
-	boolean test(Apple apple);
-}
-
-public class FilteringApples {
-
-}
