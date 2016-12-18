@@ -1,8 +1,0 @@
-package chapter2.apples;
- 
-class AppleHeavyPredicate implements ApplePredicate{
-	
-}
-public class FilteringApples {
-
-}
