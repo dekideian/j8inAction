@@ -46,4 +46,7 @@ public class DishRebaseMergeTests {
 		System.out.println("display this: "+this.helloStuff);
 	}
 	public enum Type { MEAT, FISH, OTHER }
+	public static void main(){
+		System.out.println("useful for testing");
+	}
 }
