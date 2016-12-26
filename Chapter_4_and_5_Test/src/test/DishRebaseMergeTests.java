@@ -42,6 +42,7 @@ public class DishRebaseMergeTests {
 	public String toString() {
 		return name;
 	}
+	
 	public void whatTheHell(){
 		System.out.println("display this: "+this.helloStuff);
 	}
