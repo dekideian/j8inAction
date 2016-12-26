@@ -5,12 +5,17 @@ public class DishRebaseMergeTests {
 	private final boolean vegetarian;
 	private final int calories;
 	private final Type type;
+	private final String bleah;
 	
 	public DishRebaseMergeTests(String name, boolean vegetarian, int calories, Type type) {
 		this.name = name;
 		this.vegetarian = vegetarian;
 		this.calories = calories;
 		this.type = type;
+		this.bleah = "just master bleah";
+	}
+	public String getBleah() {
+		return bleah;
 	}
 	public String getName() {
 		return name;
