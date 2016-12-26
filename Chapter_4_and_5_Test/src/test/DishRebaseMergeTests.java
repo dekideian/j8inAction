@@ -9,6 +9,7 @@ public class DishRebaseMergeTests {
 	private final String helloStuff; 
 	private final String testingBranch;
 	private final boolean intermediate;
+	
 	public DishRebaseMergeTests(String name, boolean vegetarian, int calories, Type type) {
 		this.name = name;
 		this.vegetarian = vegetarian;
