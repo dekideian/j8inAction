@@ -6,15 +6,21 @@ public class DishRebaseMergeTests {
 	private final int calories;
 	private final Type type;
 	private final String bleah;
-	private final boolean finalState;
-	
+	private final String helloStuff; 
+	private final String testingBranch;
+	private final boolean intermediate;
 	public DishRebaseMergeTests(String name, boolean vegetarian, int calories, Type type) {
 		this.name = name;
 		this.vegetarian = vegetarian;
 		this.calories = calories;
 		this.type = type;
 		this.bleah = "just master bleah";
-		this.finalState=true;
+		this.helloStuff="Hello my darling";
+		this.testingBranch="asdf";
+		this.intermediate=true;
+	}
+	public String getTestingBranch() {
+		return testingBranch;
 	}
 	public String getBleah() {
 		return bleah;
@@ -34,6 +40,9 @@ public class DishRebaseMergeTests {
 	@Override
 	public String toString() {
 		return name;
+	}
+	public void whatTheHell(){
+		System.out.println("display this: "+this.helloStuff);
 	}
 	public enum Type { MEAT, FISH, OTHER }
 }
