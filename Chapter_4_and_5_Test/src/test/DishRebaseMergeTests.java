@@ -49,4 +49,8 @@ public class DishRebaseMergeTests {
 	public static void main(){
 		System.out.println("useful for testing");
 	}
+	public static void display(String cacat){
+		System.out.println(cacat);
+	}
+	
 }
